@@ -1,8 +1,7 @@
 .projects {
-    padding: 20px;
-
     .project {
-        margin-bottom: 20px;
+        width: calc(100% - 40px);
+        margin: 20px;
         text-align: right;
         padding: 20px;
         background-color: $blue;
@@ -30,6 +29,19 @@
 
         a {
             color: $gold;
+        }
+    }
+}
+
+@include screen-lg-breakpoint {
+    .projects {
+        padding: 0 20px 60px 20px;
+        display: flex;
+        gap: 3%;
+
+        .project {
+            width: 100%;
+            margin: 0px;
         }
     }
 }

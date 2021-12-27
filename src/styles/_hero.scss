@@ -2,9 +2,11 @@
 @import './mixins';
 
 .hero {
-    padding: 20px;
     background-color: $blue;
-    min-height: 90vh;
+    
+    .col-12 {
+        padding: 20px;
+    }
 
     h1 {
         color: $gold;
@@ -28,12 +30,6 @@
     }
 
     .img {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-
         img {
             width: 100%;
         }
@@ -41,5 +37,21 @@
 }
 
 @include screen-lg-breakpoint {
-
+    .hero {
+        position: relative;
+        margin-bottom: 120px;
+        
+        .img {
+            line-height: 0;
+            position: relative;
+            top: 80px;
+            right: -20px;
+        }
+        
+        .col-12 {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+    }
 }

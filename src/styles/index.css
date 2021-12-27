@@ -111,10 +111,9 @@ textarea:focus {
   .col-7 {
     width: 60%;
   }
-}
-@media (min-width: 900px) {
-  .col-12 {
-    padding: 40px;
+
+  .col-9 {
+    width: 75%;
   }
 }
 @font-face {
@@ -601,9 +600,10 @@ template {
 }
 
 .hero {
-  padding: 20px;
   background-color: #002841;
-  min-height: 90vh;
+}
+.hero .col-12 {
+  padding: 20px;
 }
 .hero h1 {
   color: #bea055;
@@ -621,17 +621,27 @@ template {
 .hero a {
   color: #bea055;
 }
-.hero .img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
 .hero .img img {
   width: 100%;
 }
 
+@media (min-width: 1200px) {
+  .hero {
+    position: relative;
+    margin-bottom: 120px;
+  }
+  .hero .img {
+    line-height: 0;
+    position: relative;
+    top: 80px;
+    right: -20px;
+  }
+  .hero .col-12 {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+}
 .navbar {
   position: relative;
   z-index: 1;
@@ -765,11 +775,9 @@ template {
   transform: rotate(-45deg);
 }
 
-.projects {
-  padding: 20px;
-}
 .projects .project {
-  margin-bottom: 20px;
+  width: calc(100% - 40px);
+  margin: 20px;
   text-align: right;
   padding: 20px;
   background-color: #002841;
@@ -794,6 +802,35 @@ template {
 }
 .projects .project a {
   color: #bea055;
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    padding: 0 20px 60px 20px;
+    display: flex;
+    gap: 3%;
+  }
+  .projects .project {
+    width: 100%;
+    margin: 0px;
+  }
+}
+footer {
+  width: 100%;
+  background-color: #002841;
+}
+footer .footer-container {
+  padding: 20px;
+}
+footer li {
+  color: #fff;
+  list-style: none;
+}
+footer li:first-child {
+  color: #bea055;
+}
+footer li a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */

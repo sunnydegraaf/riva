@@ -1,0 +1,21 @@
+footer {
+    width: 100%;
+    background-color: $blue;
+    
+    .footer-container {
+        padding: 20px;
+    }
+
+    li {
+        &:first-child {
+            color: $gold;
+        }
+
+        color: $white;
+        list-style: none;
+
+        a {
+            color: $white;
+        }
+    }
+}

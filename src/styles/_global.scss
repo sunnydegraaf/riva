@@ -118,10 +118,8 @@ textarea {
   .col-7 {
     width: 60%;
   }
-}
 
-@include screen-md-breakpoint {
-  .col-12 {
-    padding: 40px;
+  .col-9 {
+    width: 75%;
   }
 }
