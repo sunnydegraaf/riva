@@ -1,0 +1,45 @@
+@import '../styles/variables';
+@import './mixins';
+
+.hero {
+    padding: 20px;
+    background-color: $blue;
+    min-height: 90vh;
+
+    h1 {
+        color: $gold;
+    }
+
+    h3 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+    }
+
+    h1, h3 {
+        margin-block-start: 0em;
+        margin-block-end: 0px;
+    }
+
+    a {
+        color: $gold;
+    }
+
+    .img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@include screen-lg-breakpoint {
+
+}

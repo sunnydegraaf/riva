@@ -1,0 +1,35 @@
+.projects {
+    padding: 20px;
+
+    .project {
+        margin-bottom: 20px;
+        text-align: right;
+        padding: 20px;
+        background-color: $blue;
+        position: relative;
+
+        & h2 {
+            text-align: left
+        }
+
+        img {
+            position: relative;
+            top: -20px;
+            left: -20px;
+            right: 0;
+            width: calc(100% + 40px);
+        }
+
+        h2 {
+            padding-bottom: 50px;
+            font-size: 2.369rem;
+            color: $white;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+
+        a {
+            color: $gold;
+        }
+    }
+}

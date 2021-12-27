@@ -1,0 +1,127 @@
+@import '../styles/variables';
+@import './mixins';
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+a, button{
+  cursor: pointer;
+}
+
+input {
+  outline: none !important;
+  border:1px solid gray;
+  border-radius: 2px;
+
+  &:focus {
+    outline: none !important;
+    border:1px solid $green;
+    border-radius: 2px;
+  }
+
+  margin-bottom: 20px;
+}
+
+textarea {
+  outline: none !important;
+  border:1px solid gray;
+  border-radius: 2px;
+  
+  &:focus {
+    outline: none !important;
+    border:1px solid $green;
+    border-radius: 2px;
+  }
+
+  resize: none;
+  height: 100px;
+}
+
+.col-12 {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;  
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 100%;
+}
+
+.col-3 {
+  width: 100%;
+}
+
+.col-4 {
+  width: 100%;
+}
+
+.col-5 {
+  width: 100%;
+}
+
+.col-6 {
+  width: 100%;
+}
+
+.gray-background {
+  background: #fafafa;
+}
+
+.col-7 {
+  width: 100%;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+}
+
+@include screen-lg-breakpoint {
+  .col-1 {
+    width: 12.5%;
+  }
+
+  .col-2 {
+    width: 20%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 30%;
+  }
+
+  .col-5 {
+    width: 40%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 60%;
+  }
+}
+
+@include screen-md-breakpoint {
+  .col-12 {
+    padding: 40px;
+  }
+}
