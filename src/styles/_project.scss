@@ -39,6 +39,12 @@
     }
 }
 
+.cta {
+    .col-12 {
+        padding: 20px;
+    }
+}
+
 @include screen-lg-breakpoint {
 
     .break {
@@ -81,16 +87,14 @@
 
     .intro {
         position: relative;
-        margin-bottom: 120px;
+        margin-bottom: $small-margin;
         
         .img {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            overflow: hidden;
             background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(0,40,65,1) 50%);
-            line-height: 0;
-            padding: 20px;
+
+            .col-12 {
+                position: relative;
+            }
         }
 
         .col-12 {
@@ -106,5 +110,6 @@
         align-items: flex-start;
         align-content: flex-start;
         flex-direction: row;
+        margin-bottom: $small-margin;
     }
 }

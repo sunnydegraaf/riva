@@ -143,15 +143,6 @@ nav .menu-items li:first-child {
     }
   }
 
-  nav .menu-items li {
-    font-size: 1rem;
-    border: none;
-
-    &:first-child {
-      border-top: none;
-    }
-  }
-
   nav .menu-items {
     justify-content: end;
     padding-top: 0px;
@@ -159,5 +150,40 @@ nav .menu-items li:first-child {
     background-color: transparent;
     transform: translate(0%);
     flex-direction: row;
+
+    li {
+      font-size: 1rem;
+      border: none;
+  
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    a {
+      position: relative;
+    }
+
+    a:after {
+      height: 1px;
+      background-color: $gold;
+      display: block;
+      position: absolute;
+      bottom: -0.25rem;
+      width: 0;
+      left: auto;
+      right: 0;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.4,0,.2,1);
+      transition-duration: .15s;
+      transition-duration: .5s;
+      content: '';
+    }
+
+    a:hover::after {
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
   }
 }

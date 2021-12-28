@@ -279,8 +279,19 @@ label {
 
 a.link {
   text-decoration: underline;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+  font-weight: normal;
+}
+a.link:hover {
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+  font-weight: bolder;
+}
+a.link:hover:after {
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+  margin-left: 13px;
 }
 a.link::after {
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
   display: inline-block;
   margin-left: 10px;
   width: 20px;
@@ -288,6 +299,7 @@ a.link::after {
 }
 
 p.tag {
+  display: none;
   position: absolute;
   text-align: center;
   text-transform: uppercase;
@@ -295,15 +307,22 @@ p.tag {
 }
 
 p.tag.left {
+  top: 50%;
   left: 10px;
   transform: rotate(-90deg);
 }
 
 p.tag.right {
+  top: 50%;
   right: 10px;
   transform: rotate(90deg);
 }
 
+@media (min-width: 1200px) {
+  p.tag {
+    display: block;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -732,7 +751,7 @@ template {
 
   .hero {
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 240px;
   }
   .hero .img {
     line-height: 0;
@@ -891,14 +910,6 @@ nav .menu-items li:first-child {
     display: none;
   }
 
-  nav .menu-items li {
-    font-size: 1rem;
-    border: none;
-  }
-  nav .menu-items li:first-child {
-    border-top: none;
-  }
-
   nav .menu-items {
     justify-content: end;
     padding-top: 0px;
@@ -907,17 +918,43 @@ nav .menu-items li:first-child {
     transform: translate(0%);
     flex-direction: row;
   }
+  nav .menu-items li {
+    font-size: 1rem;
+    border: none;
+  }
+  nav .menu-items li:first-child {
+    border-top: none;
+  }
+  nav .menu-items a {
+    position: relative;
+  }
+  nav .menu-items a:after {
+    height: 1px;
+    background-color: #bea055;
+    display: block;
+    position: absolute;
+    bottom: -0.25rem;
+    width: 0;
+    left: auto;
+    right: 0;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s;
+    transition-duration: 0.5s;
+    content: "";
+  }
+  nav .menu-items a:hover::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
 .projects .project {
   width: calc(100% - 40px);
   margin: 20px;
-  text-align: right;
   padding: 20px;
   background-color: #002841;
   position: relative;
-}
-.projects .project h2 {
-  text-align: left;
 }
 .projects .project img {
   position: relative;
@@ -939,7 +976,8 @@ nav .menu-items li:first-child {
 
 @media (min-width: 1200px) {
   .projects {
-    padding: 0 20px 60px 20px;
+    padding: 0 20px;
+    margin-bottom: 240px;
     display: flex;
     gap: 3%;
   }
@@ -1031,6 +1069,10 @@ footer li a {
   width: 100%;
 }
 
+.cta .col-12 {
+  padding: 20px;
+}
+
 @media (min-width: 1200px) {
   .break {
     display: none;
@@ -1075,13 +1117,10 @@ footer li a {
     margin-bottom: 120px;
   }
   .intro .img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
     background: linear-gradient(0deg, white 50%, #002841 50%);
-    line-height: 0;
-    padding: 20px;
+  }
+  .intro .img .col-12 {
+    position: relative;
   }
   .intro .col-12 {
     justify-content: space-evenly;
@@ -1095,6 +1134,7 @@ footer li a {
     align-items: flex-start;
     align-content: flex-start;
     flex-direction: row;
+    margin-bottom: 120px;
   }
 }
 

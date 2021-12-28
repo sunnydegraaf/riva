@@ -2,14 +2,9 @@
     .project {
         width: calc(100% - 40px);
         margin: 20px;
-        text-align: right;
         padding: 20px;
         background-color: $blue;
         position: relative;
-
-        & h2 {
-            text-align: left
-        }
 
         img {
             position: relative;
@@ -35,7 +30,8 @@
 
 @include screen-lg-breakpoint {
     .projects {
-        padding: 0 20px 60px 20px;
+        padding: 0 20px;
+        margin-bottom: $medium-margin;
         display: flex;
         gap: 3%;
 

@@ -145,8 +145,21 @@ label {
 
 a.link {
     text-decoration: underline;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) .25s;
+    font-weight: normal;
+
+    &:hover {
+        transition: all cubic-bezier(0.4, 0, 0.2, 1) .25s;
+        font-weight: bolder;
+
+        &:after {
+            transition: all cubic-bezier(0.4, 0, 0.2, 1) .25s;
+            margin-left: 13px;
+        }
+    }
 
     &::after {
+        transition: all cubic-bezier(0.4, 0, 0.2, 1) .25s;
         display: inline-block;
         margin-left: 10px;
         width: 20px;
@@ -155,6 +168,7 @@ a.link {
 }
 
 p.tag {
+    display: none;
     position: absolute;
     text-align: center;
     text-transform: uppercase;
@@ -162,13 +176,20 @@ p.tag {
 }
   
 p.tag.left {
+    top: 50%;
     left: 10px;
     transform: rotate(-90deg);
 
 }
 
 p.tag.right {
+    top: 50%;
     right: 10px;
     transform: rotate(90deg);
 }
 
+@include screen-lg-breakpoint {
+    p.tag {
+        display: block;
+    }
+}
