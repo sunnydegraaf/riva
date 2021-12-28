@@ -2,6 +2,7 @@
 @import './mixins';
 @import './animations';
 
+.project-page {
 .intro {
     background-color: $blue;
     
@@ -37,16 +38,17 @@
             width: 100%;
         }
     }
-}
 
-.cta {
-    .col-12 {
-        padding: 20px;
+    .cta {
+        .col-12 {
+            padding: 20px;
+        }
     }
+}
 }
 
 @include screen-lg-breakpoint {
-
+.project-page {
     .break {
         display: none;
     }
@@ -112,4 +114,5 @@
         flex-direction: row;
         margin-bottom: $small-margin;
     }
+}
 }

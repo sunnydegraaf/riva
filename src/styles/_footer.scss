@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    background-color: $blue;
+    background-color: #f3f3f3;
     
     .footer-container {
         padding: 20px;
@@ -8,14 +8,15 @@ footer {
 
     li {
         &:first-child {
+            font-weight: 800;
             color: $gold;
         }
 
-        color: $white;
+        color: $blue;
         list-style: none;
 
         a {
-            color: $white;
+            color: $blue;
         }
     }
 }

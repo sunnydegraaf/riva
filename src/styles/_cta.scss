@@ -1,0 +1,28 @@
+@import '../styles/variables';
+@import './mixins';
+@import './animations';
+
+.contact {
+    background-color: $blue;
+    padding: $xlarge-padding 20px;
+
+    h2 {
+        color: $white;
+    }
+
+    a h3 {
+        text-decoration: underline solid 1px;
+        color: $white;
+    }
+
+    .col-12 {
+        margin: auto;
+        padding: 20px;
+    }
+}
+
+@include screen-lg-breakpoint {
+    .contact {
+        padding: $xlarge-padding 0;
+    }
+}

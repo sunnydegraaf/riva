@@ -24,3 +24,9 @@
         @content;
     }
 }
+
+@mixin screen-sm-breakpoint-max {
+    @media (max-width: #{$screen-sm}) {
+        @content;
+    }
+}

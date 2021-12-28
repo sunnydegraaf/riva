@@ -68,6 +68,10 @@ h1 {
     font-size: 4.209rem;
     font-family: Lora-Bold;
     font-weight: 400;
+
+    @include screen-sm-breakpoint-max {
+        font-size: 3.5em;
+    }
 }
 
 h2 {
@@ -76,6 +80,10 @@ h2 {
     font-size: 3.157rem;
     line-height: 50px;
     font-weight: 400;
+
+    @include screen-sm-breakpoint-max {
+        font-size: 2.75em;
+    }
 }
 
 h3 {
@@ -84,6 +92,11 @@ h3 {
     font-size: 2.369rem;
     color: $blue;
     font-weight: 400;
+
+    @include screen-sm-breakpoint-max {
+        margin-top: 0;
+        font-size: 2em;
+    }
 }
 
 h4 {
@@ -118,14 +131,12 @@ span[role=alert] {
 input, textarea {
     padding: 5px;
     font-weight: 400;
-    color: $green;
+    color: $gold;
     font-family: Montserrat-Light !important;
-    font-size: 16px !important;
 }
 
 button {
     font-family: Montserrat-Light !important;
-    font-size: 14px !important;
 }
 
 .subhead, label {
@@ -143,7 +154,7 @@ label {
     margin-bottom: 20px;
 }
 
-a.link {
+a.link, p.link {
     text-decoration: underline;
     transition: all cubic-bezier(0.4, 0, 0.2, 1) .25s;
     font-weight: normal;

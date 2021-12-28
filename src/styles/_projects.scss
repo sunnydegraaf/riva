@@ -1,28 +1,39 @@
 .projects {
     .project {
+        display: flex;
+        flex-direction: column;
         width: calc(100% - 40px);
+        height: 400px;
         margin: 20px;
-        padding: 20px;
         background-color: $blue;
         position: relative;
 
+        > div {
+            overflow: hidden;
+            max-height: 200px;
+            margin-bottom: $xsmall-padding;
+        }
+
         img {
-            position: relative;
-            top: -20px;
-            left: -20px;
-            right: 0;
-            width: calc(100% + 40px);
+            width: 100%
         }
 
         h2 {
-            padding-bottom: 50px;
+            flex: 1;
+            padding: 0 20px;
             font-size: 2.369rem;
             color: $white;
             margin-block-start: 0em;
             margin-block-end: 0em;
         }
 
-        a {
+        p {
+            margin-block-start: 0;
+            margin-block-end: 0;    
+        }
+
+        a, p {
+            padding: 20px;
             color: $gold;
         }
     }
@@ -30,8 +41,6 @@
 
 @include screen-lg-breakpoint {
     .projects {
-        padding: 0 20px;
-        margin-bottom: $medium-margin;
         display: flex;
         gap: 3%;
 
