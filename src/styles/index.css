@@ -740,7 +740,7 @@ template {
 
   h1 span {
     display: block;
-    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   h3 {
@@ -749,19 +749,19 @@ template {
 
   h3 span {
     display: block;
-    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   .logo {
-    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   p {
-    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   a {
-    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   .img {
@@ -769,7 +769,7 @@ template {
   }
 
   .img img {
-    animation: smallReveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: smallReveal 1s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   .hero {
@@ -1151,26 +1151,26 @@ footer li a {
   }
   .project-page h1 span {
     display: block;
-    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
   }
   .project-page h3 {
     overflow: hidden;
   }
   .project-page h3 span {
     display: block;
-    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
   }
   .project-page .logo {
-    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
   }
   .project-page p {
-    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
   }
   .project-page a {
-    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
   }
   .project-page .img img {
-    animation: smallReveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: smallReveal 1s cubic-bezier(0.77, 0, 0.175, 1);
   }
   .project-page .intro {
     position: relative;

@@ -5,8 +5,8 @@ document.addEventListener('click', function(event) {
     
     var element = document.getElementById(event.target.dataset.target);
     var menu = document.getElementById('nav');
-    menu.checked = false
+    menu.checked = "false"
     
     element.scrollIntoView({block: "start", behavior: "smooth"});
   
-  });
+});

@@ -56,7 +56,7 @@
 
     h1 span {
         display: block;
-        animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+        animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
     h3 {
@@ -65,19 +65,19 @@
 
     h3 span {
         display: block;
-        animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+        animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
     .logo {
-        animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+        animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
     p {
-        animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+        animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
     a {
-        animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+        animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
     .img {
@@ -85,7 +85,7 @@
     }
 
     .img img {
-        animation: smallReveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+        animation: smallReveal 1s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
     .hero {
