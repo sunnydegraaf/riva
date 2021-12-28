@@ -43,7 +43,7 @@
     }
 }
 
-@include screen-lg-breakpoint {
+@include screen-md-breakpoint {
     .form {
         text-align: left;
         .col-12 {

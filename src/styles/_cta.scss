@@ -21,7 +21,7 @@
     }
 }
 
-@include screen-lg-breakpoint {
+@include screen-md-breakpoint {
     .contact {
         padding: $xlarge-padding 0;
     }

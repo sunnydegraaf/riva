@@ -47,8 +47,8 @@
 }
 }
 
-@include screen-lg-breakpoint {
-.project-page {
+@include screen-md-breakpoint {
+    .project-page {
     .break {
         display: none;
     }

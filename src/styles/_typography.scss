@@ -199,7 +199,7 @@ p.tag.right {
     transform: rotate(90deg);
 }
 
-@include screen-lg-breakpoint {
+@include screen-md-breakpoint {
     p.tag {
         display: block;
     }

@@ -136,7 +136,7 @@ nav .menu-items li:first-child {
   transform: rotate(-45deg);
 }
 
-@include screen-lg-breakpoint {
+@include screen-md-breakpoint {
   .nav-container {
     .checkbox, .hamburger-lines {
       display: none ;
