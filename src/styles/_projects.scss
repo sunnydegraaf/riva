@@ -57,6 +57,7 @@
 @include screen-md-breakpoint {
     .projects {
         padding: 60px 0;
+        margin-bottom: $small-margin;
 
         .col-12 {
         display: flex;

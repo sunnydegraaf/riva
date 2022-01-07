@@ -52,8 +52,11 @@
     }
 
     .attributes {
+        background-color: aliceblue;
+
         .col-12 {
-            padding: 20px;
+            padding: 120px 20px;
+            margin-bottom: 0px !important;
         }
 
         h2 {
@@ -68,7 +71,7 @@
  
         section {
             padding: 30px;
-            background: $lightgray;
+            background: $white;
         }
 
         dl {
@@ -140,8 +143,12 @@
         animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
-    .img img {
-        animation: smallReveal 1s cubic-bezier(0.77, 0, 0.175, 1);
+    .img {
+        margin-top: 25px;
+
+        img {
+            animation: smallReveal 1s cubic-bezier(0.77, 0, 0.175, 1);
+        }
     }
 
     .intro {
