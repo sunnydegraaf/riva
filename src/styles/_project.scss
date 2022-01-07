@@ -45,6 +45,58 @@
             padding: 20px;
         }
     }
+
+    .attributes {
+        .col-12 {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+        }
+
+        h3.more-info {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-top: 3rem;
+        }
+ 
+        section {
+            padding: 30px;
+            background: $lightgray;
+        }
+
+        dl {
+            dt {
+                border-bottom: 1px solid $lightgray2;
+            }
+
+            dt:not(dt:first-child) {
+                border-top: 1px solid $lightgray2;
+            }
+        }
+
+        a {
+            color: $gold;
+        }
+
+        dt {
+            color: $lightgray2;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        dd {
+            color: $darkgrey;
+            margin-left: 0.25rem;
+
+
+            &.last {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
 }
 
 @include screen-md-breakpoint {
@@ -106,7 +158,7 @@
         }
     }
 
-    .cta .col-12 {
+    .cta .col-12, .attributes .col-12 {
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;

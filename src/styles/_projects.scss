@@ -1,10 +1,21 @@
 .projects {
     .col-12 {
+            a {
+            width: 100%;
+
+            &:hover {
+                .project img {
+                    transform: scale(1.05);
+                    transition: transform 0.4s ease-in-out;
+                }
+            }
+        }
+
     .project {
         display: flex;
         flex-direction: column;
         width: calc(100% - 40px);
-        height: 400px;
+        max-height: 400px;
         margin: 20px;
         background-color: $blue;
         position: relative;
@@ -23,7 +34,7 @@
         h2 {
             flex: 1;
             padding: 0 20px;
-            font-size: 2.369rem;
+            font-size: 1.75rem;
             color: $white;
             margin-block-start: 0em;
             margin-block-end: 0em;
