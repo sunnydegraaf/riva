@@ -999,6 +999,7 @@ nav .menu-items li:first-child {
   margin-bottom: 20px;
 }
 .projects .col-12 .project img {
+  transition: transform 0.4s ease-in-out;
   width: 100%;
 }
 .projects .col-12 .project h2 {
