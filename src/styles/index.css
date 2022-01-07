@@ -1147,7 +1147,11 @@ footer li a {
 .project-page .intro a {
   color: #bea055;
 }
+.project-page .intro .img .col-12 {
+  padding: 0px;
+}
 .project-page .intro .img img {
+  margin-bottom: -10px;
   width: 100%;
 }
 .project-page .cta .col-12 {

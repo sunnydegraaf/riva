@@ -34,7 +34,12 @@
     }
 
     .img {
+        .col-12 {
+            padding: 0px;
+        }
+
         img {
+            margin-bottom: -10px;
             width: 100%;
         }
     }
