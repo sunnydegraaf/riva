@@ -4,8 +4,6 @@
 
 .partners {
     text-align: left;
-    padding: 60px 20px;
-    background-color: aliceblue;
 
     .content, .images {
         display: flex;
@@ -19,7 +17,7 @@
     .heading {
         h2 {
             max-width: 400px;
-            color: $blue;
+            color: $green;
         }
     }
 
@@ -39,10 +37,12 @@
     }
 
     h2 {
-        color: $gold;
+        color: $gold !important;
     }
 
-    .images.col-12 {
+    .images.col-10 {
+        margin-left: auto;
+        margin-right: auto;
         transition: all cubic-bezier(0.4, 0, 0.2, 1) .25s;
         img {
             filter: grayscale(1);
@@ -61,28 +61,31 @@
     .partners {
 
         .content {
+            padding-top: 100px;
+            border-top: 1px solid $gold;
             display: flex;
-            margin-bottom: $small-margin;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: center;
+            margin-bottom: 100px;
+
+            p, h2 {
+                margin: 0;
+            }
+             
+            p {
+                margin-bottom: 2rem;
+            }
         }
 
         img {
             width: 75%;
         }
 
-        .heading {
-            display: flex;
-            align-items: center;
-            padding: $xlarge-padding 0;
-        }
-
-        .body {
-            padding: $xlarge-padding 0;
-        }
-
         .images {
             align-content: center;
             justify-content: center;
-            margin-bottom: $small-margin;
+            margin-bottom: 100px;
 
             .col-2 {
                 width: 20%;

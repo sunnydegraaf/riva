@@ -3,26 +3,25 @@
 @import './animations';
 
 .contact {
-    background-color: $blue;
+    background-color: $white;
     padding: $xlarge-padding 20px;
 
     h2 {
-        color: $white;
+        color: $green;
     }
 
     a h3 {
         text-decoration: underline solid 1px;
-        color: $white;
+        color: $green;
     }
 
     .col-12 {
         margin: auto;
-        padding: 20px;
     }
 }
 
 @include screen-md-breakpoint {
     .contact {
-        padding: $xlarge-padding 0;
+        padding: $xlarge-padding 20;
     }
 }

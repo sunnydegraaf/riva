@@ -42,6 +42,14 @@
 }
 
 @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
     font-family: 'Montserrat-Bold';
     src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
     font-weight: normal;
@@ -49,23 +57,15 @@
     font-display: fallback;
 }
 
-p {
-    margin-bottom: 1rem;
-}
-
 h1, h2, h3, h4, h5, dt, dd {
   margin: 3rem 0 1.38rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.3;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
 }
 
 h1 {
-    margin-bottom: 1em;
-    margin-top: 0;
-    font-size: 4.209rem;
+    font-size: 5rem;
     font-family: Lora-Bold;
     font-weight: 400;
 
@@ -75,9 +75,9 @@ h1 {
 }
 
 h2 {
-    color: $blue;
+    color: $gold;
     font-family: Lora-Bold;
-    font-size: 3.157rem;
+    font-size: 3.3rem;
     line-height: 50px;
     font-weight: 400;
 
@@ -87,28 +87,26 @@ h2 {
 }
 
 h3 {
-    margin-top: 30px;
     font-family: Montserrat-Light;
-    font-size: 2.369rem;
-    color: $blue;
+    font-size: 2rem;
+    color: $white;
     font-weight: 400;
 
     @include screen-sm-breakpoint-max {
-        margin-top: 0;
         font-size: 2em;
     }
 }
 
 h4 {
     font-family: Montserrat-Light;
-    color: $blue;
+    color: $white;
     font-weight: 400;
     font-size: 1.777rem;
 }
 
 h5 {
     font-family: Montserrat-Light;
-    color: $blue;
+    color: $green;
     font-weight: 400;
     font-size: 1.333rem;
 }
@@ -119,8 +117,9 @@ small, .text_small {
 
 
 p, li, a, label {
+    font-size: 18px;
     font-weight: 400;
-    color: $blue;
+    color: $white;
     font-family: Montserrat-Light;
 }
 
@@ -141,17 +140,9 @@ button {
 
 .subhead, label {
     text-transform: capitalize;
-    color: $blue;
+    color: $green;
     font-family: Montserrat-Light;
     text-decoration: underline;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-.subhead {
-    margin-bottom: 20px;
 }
 
 a.link, p.link {
@@ -203,4 +194,31 @@ p.tag.right {
     p.tag {
         display: block;
     }
+}
+
+h1 {
+    overflow: hidden;
+}
+
+h1 span {
+    display: block;
+    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+h3 {
+    overflow: hidden;
+}
+
+h3 span {
+    display: block;
+    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+
+p {
+    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+a {
+    animation: fadeIn 1.25s cubic-bezier(0.77, 0, 0.175, 1);
 }

@@ -4,7 +4,7 @@
 
 .project-page {
 .intro {
-    background-color: $blue;
+    background-color: $green;
     
     .col-12 {
         padding: 20px;
@@ -52,7 +52,7 @@
     }
 
     .attributes {
-        background-color: aliceblue;
+        background-color: #303030;
 
         .col-12 {
             padding: 120px 20px;
@@ -71,7 +71,7 @@
  
         section {
             padding: 30px;
-            background: $white;
+            background: $green;
         }
 
         dl {
@@ -156,7 +156,7 @@
         margin-bottom: $small-margin;
         
         .img {
-            background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(0,40,65,1) 50%);
+            background: linear-gradient(0deg, #303030 50%, $green 50%);
 
             .col-12 {
                 position: relative;
@@ -176,7 +176,6 @@
         align-items: flex-start;
         align-content: flex-start;
         flex-direction: row;
-        margin-bottom: $small-margin;
     }
 }
 }

@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #303030;
+}
+
 html {
   font-size: 100%;
 }
@@ -57,41 +61,18 @@ textarea {
   width: 100%;  
 }
 
-.col-1 {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {
   width: 100%;
 }
 
-.col-2 {
-  width: 100%;
-}
+@include screen-sm-breakpoint {
+  .col-1, .col-2, .col-3, .col-4, .col-5 {
+    width: 50%;
+  }
 
-.col-3 {
-  width: 100%;
-}
-
-.col-4 {
-  width: 100%;
-}
-
-.col-5 {
-  width: 100%;
-}
-
-.col-6 {
-  width: 100%;
-}
-
-.gray-background {
-  background: #fafafa;
-}
-
-.col-7 {
-  width: 100%;
-}
-
-.box-shadow {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
-          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+  .col-6, .col-7, .col-8, .col-9 {
+    width: 100%;
+  }
 }
 
 @include screen-md-breakpoint {
@@ -126,4 +107,51 @@ textarea {
   .col-9 {
     width: 75%;
   }
+
+  .col-10 {
+    width: 80%;
+  }
+}
+
+.content {
+  h1, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  a {
+    font-family: 'Montserrat-Regular';
+  }
+
+  p {
+    margin: 2.5rem 0;
+  }
+}
+
+.img img {
+  animation: smallReveal 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.box-shadow {
+  box-shadow: 0 3px 5px 3px rgb(0 0 0 / 5%);
+}
+
+.gray-background {
+  background: #fafafa;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@include screen-md-breakpoint {
+  .row {
+    flex-wrap: nowrap;
+  }
+}
+
+section > .col-12 {
+  padding: 0 20px;
 }

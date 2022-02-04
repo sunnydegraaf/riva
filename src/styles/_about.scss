@@ -2,28 +2,30 @@
 @import './mixins';
 @import './animations';
 
-.about {
-    margin: 60px 20px;
-}
-
 @include screen-md-breakpoint {
     .about {
+        padding: 200px 0;
 
         .col-12 {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-direction: row;
-            align-items: center;
-            align-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
         }
 
         .col-6 {
-            padding: $xlarge-padding 0;
+            p {
+                margin: 0;
+            }
         }
-    
+
         .content {
-            max-width: 600px;
-            margin-bottom: $small-margin 0;
+            h2 {
+                margin: 0;
+            }
+
+
         }
     }
 }

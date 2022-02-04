@@ -1,4 +1,9 @@
 .projects {
+    background: rgb(48,48,48);
+    background: -moz-linear-gradient(180deg, rgba(48,48,48,1) 60%, rgba(226,226,226,1) 60%);
+    background: -webkit-linear-gradient(180deg, rgba(48,48,48,1) 60%, rgba(226,226,226,1) 60%);
+    background: linear-gradient(180deg, rgba(48,48,48,1) 60%, rgba(226,226,226,1) 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#303030",endColorstr="#e2e2e2",GradientType=1);
     .col-12 {
             a {
             width: 100%;
@@ -12,12 +17,14 @@
         }
 
     .project {
+        border-radius: 2px;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         width: calc(100% - 40px);
         max-height: 400px;
         margin: 20px;
-        background-color: $blue;
+        background-color: $green;
         position: relative;
 
         > div {
@@ -56,8 +63,7 @@
 
 @include screen-md-breakpoint {
     .projects {
-        padding: 60px 0;
-        margin-bottom: $small-margin;
+        padding-bottom: $small-margin;
 
         .col-12 {
         display: flex;
